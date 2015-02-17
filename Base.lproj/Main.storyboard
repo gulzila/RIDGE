@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--Menu View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="MenuViewController" customModule="Ridge" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="97h-Rv-BiA">
+                                <rect key="frame" x="31" y="48" width="258" height="131"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="The Ridge">
+                                        <attributes>
+                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <font key="NSFont" size="50" name="GillSans-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AcT-kR-4gc">
+                                <rect key="frame" x="97" y="293" width="126" height="50"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Rules">
+                                            <attributes>
+                                                <font key="NSFont" size="22" name="HelveticaNeue-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hxf-JD-NAE">
+                                <rect key="frame" x="97" y="351" width="126" height="50"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Options">
+                                            <attributes>
+                                                <font key="NSFont" size="22" name="HelveticaNeue-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pRG-8z-b7Q">
+                                <rect key="frame" x="97" y="409" width="126" height="50"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Credits">
+                                            <attributes>
+                                                <font key="NSFont" size="22" name="HelveticaNeue-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jpy-b0-VvV">
+                                <rect key="frame" x="97" y="235" width="126" height="50"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Play">
+                                            <attributes>
+                                                <font key="NSFont" size="35" name="HelveticaNeue-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="onPlayTap:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Y5E-Dm-wXg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="3cW-eQ-xxJ" kind="modal" identifier="playGameSegue" modalPresentationStyle="fullScreen" animates="NO" id="cls-zg-khB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="25" y="170"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="5ju-jO-xX9">
+            <objects>
+                <viewController id="3cW-eQ-xxJ" customClass="GameViewController" customModule="Ridge" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jHN-tn-cDN"/>
+                        <viewControllerLayoutGuide type="bottom" id="K9y-ui-VC3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1fE-Mc-E1I">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MUz-AY-dTS" userLabel="Ground">
+                                <rect key="frame" x="0.0" y="377" width="320" height="331"/>
+                                <color key="backgroundColor" red="0.94434902815013411" green="0.89929290179158861" blue="0.7010704007190236" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view alpha="0.24999999999999967" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UXy-2X-b8h" userLabel="Ground">
+                                <rect key="frame" x="0.0" y="116" width="320" height="460"/>
+                                <color key="backgroundColor" red="0.9443490282" green="0.89929290179999999" blue="0.70107040070000004" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="barn" translatesAutoresizingMaskIntoConstraints="NO" id="VbE-7R-HL5">
+                                <rect key="frame" x="7" y="303" width="120" height="80"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tree" translatesAutoresizingMaskIntoConstraints="NO" id="9t3-hX-M7Q">
+                                <rect key="frame" x="206" y="292" width="100" height="90"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wall" translatesAutoresizingMaskIntoConstraints="NO" id="ziX-B3-PYn">
+                                <rect key="frame" x="137" y="338" width="80" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.34999999999999964" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wall" translatesAutoresizingMaskIntoConstraints="NO" id="LWA-Y9-az3">
+                                <rect key="frame" x="27" y="85" width="60" height="30"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.34999999999999964" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="barn" translatesAutoresizingMaskIntoConstraints="NO" id="wYF-PZ-ruR">
+                                <rect key="frame" x="152" y="33" width="100" height="107"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.34999999999999964" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tree" translatesAutoresizingMaskIntoConstraints="NO" id="es7-bj-YVj">
+                                <rect key="frame" x="75" y="45" width="80" height="70"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="barrel" translatesAutoresizingMaskIntoConstraints="NO" id="Yfo-q5-S0G">
+                                <rect key="frame" x="285" y="338" width="30" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.34999999999999964" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="barrel" translatesAutoresizingMaskIntoConstraints="NO" id="LdY-AF-C99">
+                                <rect key="frame" x="266" y="85" width="20" height="30"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="robot" translatesAutoresizingMaskIntoConstraints="NO" id="0MJ-vm-G3K">
+                                <rect key="frame" x="120" y="356" width="80" height="100"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VyV-R8-9Pf">
+                                <rect key="frame" x="10" y="510" width="77" height="30"/>
+                                <state key="normal" title="Hide">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTapHide:" destination="3cW-eQ-xxJ" eventType="touchUpInside" id="Lg9-wc-uUu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lwV-Pb-lIH">
+                                <rect key="frame" x="240" y="510" width="61" height="30"/>
+                                <state key="normal" title="End Turn">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onEndTurn:" destination="3cW-eQ-xxJ" eventType="touchUpInside" id="ev7-Nh-Fx2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bG5-wN-EKS">
+                                <rect key="frame" x="7" y="303" width="120" height="75"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" red="1" green="0.50863489750000002" blue="0.16480653549999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onHidingBarnTap:" destination="3cW-eQ-xxJ" eventType="touchUpInside" id="5bR-z6-aYx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X1I-Y8-sZS">
+                                <rect key="frame" x="137" y="295" width="80" height="83"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onHidingWallTap:" destination="3cW-eQ-xxJ" eventType="touchUpInside" id="aNL-dl-Rhj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v0e-Ge-mLb">
+                                <rect key="frame" x="218" y="295" width="68" height="83"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onHidingTreeTap:" destination="3cW-eQ-xxJ" eventType="touchUpInside" id="lFc-Ku-o8K"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8TR-3J-MEC">
+                                <rect key="frame" x="280" y="317" width="40" height="61"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onHidingBarrelTap:" destination="3cW-eQ-xxJ" eventType="touchUpInside" id="inH-Ac-qHR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X1r-91-Ebf">
+                                <rect key="frame" x="26" y="59" width="61" height="58"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onShootWallTap:" destination="3cW-eQ-xxJ" eventType="touchUpInside" id="0n4-KB-vAk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t8t-hB-aAx">
+                                <rect key="frame" x="85" y="39" width="62" height="75"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onShootTreeTap:" destination="3cW-eQ-xxJ" eventType="touchUpInside" id="yGB-wd-aNt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Esu-4t-ATG">
+                                <rect key="frame" x="152" y="28" width="100" height="89"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onShootBarnTap:" destination="3cW-eQ-xxJ" eventType="touchUpInside" id="XUs-ad-T6m"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KUo-jM-meH">
+                                <rect key="frame" x="261" y="75" width="30" height="39"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onShootBarrelTap:" destination="3cW-eQ-xxJ" eventType="touchUpInside" id="Xdh-Ck-gll"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yby-9e-k1U">
+                                <rect key="frame" x="290" y="197" width="40" height="61"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p0L-kE-LFr">
+                                <rect key="frame" x="85" y="488" width="141" height="80"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bullet" translatesAutoresizingMaskIntoConstraints="NO" id="nRs-uk-Yye">
+                                        <rect key="frame" x="20" y="20" width="20" height="40"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bullet" translatesAutoresizingMaskIntoConstraints="NO" id="KIZ-nN-16u">
+                                        <rect key="frame" x="60" y="20" width="20" height="40"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bullet" translatesAutoresizingMaskIntoConstraints="NO" id="2Q1-nO-ZQo">
+                                        <rect key="frame" x="101" y="20" width="20" height="40"/>
+                                    </imageView>
+                                </subviews>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="AmmoView" destination="p0L-kE-LFr" id="jNt-UX-qlr"/>
+                        <outlet property="HideButton" destination="VyV-R8-9Pf" id="GbO-6e-bWX"/>
+                        <outlet property="bullet1" destination="nRs-uk-Yye" id="SQr-B3-mRT"/>
+                        <outlet property="bullet2" destination="KIZ-nN-16u" id="4bu-Fs-hki"/>
+                        <outlet property="bullet3" destination="2Q1-nO-ZQo" id="W7x-Mh-Eof"/>
+                        <outlet property="robotHero" destination="0MJ-vm-G3K" id="kS6-Wc-EV9"/>
+                        <segue destination="vXZ-lx-hvc" kind="modal" identifier="doQuit" id="gDs-G1-NWV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Sq-61-J8N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="568" y="170"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="barn" width="173" height="104"/>
+        <image name="barrel" width="168" height="239"/>
+        <image name="bullet" width="113" height="250"/>
+        <image name="robot" width="148" height="210"/>
+        <image name="tree" width="249" height="216"/>
+        <image name="wall" width="224" height="188"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
